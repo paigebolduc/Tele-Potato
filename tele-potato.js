@@ -1,4 +1,3 @@
-let item = 0
 let potato = 0
 radio.onDataPacketReceived( ({ receivedNumber }) =>  {
     potato = receivedNumber
@@ -10,10 +9,10 @@ input.onGesture(Gesture.Shake, () => {
     }
 })
 input.onButtonPressed(Button.AB, () => {
-    item = 10 + Math.random(21)
+    potato = 10 + Math.random(21)
 })
-potato = -1
 radio.setGroup(1)
+potato = -1
 basic.forever(() => {
     if (potato == 0) {
         basic.showIcon(IconNames.Skull)
@@ -26,3 +25,4 @@ basic.forever(() => {
         }
     }
 })
+
