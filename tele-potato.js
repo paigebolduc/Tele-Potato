@@ -16,13 +16,13 @@ potato = -1
 basic.forever(() => {
     if (potato == 0) {
         basic.showIcon(IconNames.Skull)
-        if (potato < 0) {
-            basic.clearScreen()
-        }
-        if (potato > 0) {
-            basic.showIcon(IconNames.Chessboard)
-            potato += -1
-        }
+    }
+    if (potato < 0) {
+        basic.clearScreen()
+    }
+    if (potato > 0) {
+        basic.showIcon(IconNames.Chessboard)
+        potato += -1
     }
 })
 
